@@ -1,0 +1,113 @@
+.action svg {
+  margin-top: 40px;
+  width: 64px;
+  height: 64px;
+  color: rgb(213, 146, 102);
+  transition: 0.3s;
+}
+
+.action svg:hover {
+  color: rgb(213, 200, 102);
+  transition: 0.3s;
+}
+
+.action {
+  display: inline-block;
+  height: 200px;
+  margin: 30px;
+  width: 550px;
+  border-radius: 7px;
+  border: solid 2px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(90deg, rgb(213, 167, 102), rgb(183, 42, 42));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #1c1b1b inset;
+  transition: 0.3s;
+}
+
+.action:hover {
+  width: 580px;
+  transition: 0.3s;
+}
+
+.smaller {
+  width: 150px;
+}
+
+.smaller:hover {
+  width: 175px;
+}
+
+.toolbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.toolbar button {
+  width: 200px;
+  font-size: 14px;
+}
+
+.toolbar button:hover {
+  width: 210px;
+  height: 60px;
+}
+
+.toolbar svg {
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.loading {
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .action {
+    width: 350px;
+    height: 150px;
+  }
+
+  .action svg {
+    width: 32px;
+    height: 32px;
+    margin-top: 40px;
+  }
+
+  .action h2 {
+    font-size: 17px;
+  }
+
+  .action:hover {
+    width: 350px;
+    height: 150px;
+  }
+
+  .smaller {
+    width: 75px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .smaller:hover {
+    width: 100px;
+    height: 40px;
+  }
+}
